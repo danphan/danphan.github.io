@@ -71,49 +71,14 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-acm_id: # your dl.acm.org/profile/id
-blogger_url: # your blogger URL
-bluesky_url: # your bluesky URL
-dblp_url: # your DBLP profile url
-discord_id: # your discord id (18-digit unique numerical identifier)
-facebook_id: # your facebook id
-flickr_id: # your flickr id
 github_username: danphan # your GitHub user name
-gitlab_username: # your GitLab user name
-ieee_id: # your ieeexplore.ieee.org/author/id
-inspirehep_id: 1010907 # Inspire HEP author ID
-instagram_id: # your instagram id
 kaggle_id: # your kaggle id
-keybase_username: # your keybase user name
-lastfm_id: # your lastfm id
-lattes_id: # your ID on Lattes (Brazilian Lattes CV)
-linkedin_username: # your LinkedIn user name
-mastodon_username: # your mastodon instance+username in the format instance.tld/@username
-medium_username: # your Medium username
+linkedin_username: danphan2884 # your LinkedIn user name
 orcid_id: # your ORCID ID
-osf_id: # your OSF ID
-pinterest_id: # your pinterest id
-publons_id: # your ID on Publons
-quora_username: # your Quora username
-research_gate_profile: # your profile on ResearchGate
-scholar_userid: qc6CJjYAAAAJ # your Google Scholar ID
-scopus_id: # your profile on Scopus
-semanticscholar_id: # your Semantic Scholar ID
-spotify_id: # your spotify id
-stackoverflow_id: # your stackoverflow id
-telegram_username: # your Telegram user name
-unsplash_id: # your unsplash id
-wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
-whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
-wikidata_id: # your wikidata id
-wikipedia_id: # your wikipedia id (Case sensitive)
-work_url: # work page URL
-x_username: # your X handle
-youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
-zotero_username: # your zotero username
+scholar_userid: ldZgaDUAAAAJ # your Google Scholar ID
 
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  I can be reached by email, linkedin, carrier pigeon, or messages in bottles cast into the sea.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -133,8 +98,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: Neural Perceptions # blog_name will be displayed in your blog page
+blog_description: Posts about machine learning, physics, or whatever I'm thinking about.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -168,13 +133,13 @@ disqus_shortname: al-folio # put your disqus shortname
 # External sources.
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
+#external_sources:
+#  - name: medium.com
+#    rss_url: https://medium.com/@al-folio/feed
+#  - name: Google Blog
+#    posts:
+#      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
+#        published_date: 2024-05-14
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -193,14 +158,14 @@ collections:
   news:
     defaults:
       layout: post
-    output: true
+    output: false
     permalink: /:collection/:title/
   projects:
-    output: true
+    output: false
     permalink: /:collection/:title/
 
 announcements:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
@@ -229,6 +194,7 @@ kramdown:
 # Includes & excludes
 include: ["_pages"]
 exclude:
+  - _archived_posts/
   - bin/
   - CONTRIBUTING.md
   - CUSTOMIZE.md
